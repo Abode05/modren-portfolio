@@ -54,7 +54,7 @@ const SkillBar = ({ name, level }) => (
 )
 const About = () => {
   return (
-    <div className="min-h-screen  relative   p-6 ">
+    <div className="min-h-screen  relative   p-6 text-black ">
       <div className="flex justify-between  mt-8   flex-col  lg:flex-row ">
         {' '}
         <div className=" w-full h-screen relative  ">
@@ -82,9 +82,9 @@ const About = () => {
             className="h-20 w-20 absolute bottom-48 left-72 "
           />
         </div>
-        <div className=" w-full p-8 relative h-screen ">
-          <h1 className=" text-white text-3xl mb-4">About Me</h1>
-          <p className="text-white">
+        <div className=" w-full p-8 relative h-screen text-black ">
+          <h1 className=" dark:text-white text-3xl mb-4">About Me</h1>
+          <p className="dark:text-white">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
             tempus pharetra
