@@ -50,7 +50,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div
-          className="cursor-pointer relative left-0 md:left-0 duration-150"
+          className="cursor-pointer relative sm:left-48 md:left-0 duration-150"
           onClick={toggleTheme}
         >
           {theme === 'light' ? (
