@@ -13,7 +13,7 @@ const About = () => {
     <div className="min-h-screen  relative   p-6 text-black ">
       <div className="flex justify-between  mt-8 relative   flex-col  lg:flex-row ">
         {' '}
-        <div className=" w-full lg:w-1/2 h-screen flex  relative   ">
+        {/* <div className=" w-full lg:w-1/2 h-screen flex  relative   ">
           <div className="relative mt-24 md:ml-4   ml-1      ">
             <motion.div className="absolute border-2  border-gray-700 dark:border-gray-200 rounded-full h-80 w-80 scale-x-125 transform rotate-45  left-1 " />
             <motion.div className="absolute border-2 dark:border-gray-200 border-gray-700 rounded-full h-80 w-80 scale-x-125 transform rotate-45 skew-y-4 translate-2 left-6 -top-6" />
@@ -37,7 +37,7 @@ const About = () => {
             whileHover={{ transition: { duration: 1 } }}
             className="h-20 w-20 absolute bottom-40 md:bottom-48 left-72 "
           />
-        </div>
+        </div> */}
         <div className=" w-full lg:w-1/2 p-8 relative h-screen text-black ">
           <h1 className=" dark:text-white text-3xl mb-4">About Me</h1>
           <p className="dark:text-white">
