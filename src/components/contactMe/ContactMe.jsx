@@ -4,17 +4,17 @@ const ContactMe = () => {
     <div className="container min-h-screen p-2 ">
       <div className="mt-24">
         <div className="">
-          <p className="text-md text-teal-500 mb-4">contact</p>
+          <p className="text-lg text-teal-600 font-semibold mb-2">contact</p>
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center  ">
-            <h1 className="text-4xl  font-semibold">
-              Let’s Discuss Your Project
+            <h1 className="text-4xl  font-bold">
+              Let’s Discuss Your <span className='text-teal-500 '> Project</span> 
             </h1>
             <div className="loader "></div>
           </div>
         </div>
 
-        <div className="flex justify-between mt-12  ">
-          <div className="flex flex-col gap-14 max-w-md w-full ">
+        <div className="flex flex-col md:flex-row gap-4 justify-between mt-12  ">
+          <div className="flex flex-col gap-14 max-w-md w-full p-2 ">
             <div className="flex justify-start items-center gap-2">
               <div className="bg-slate-600 p-2 rounded-md">
                 <FaPhoneAlt className="text-xl  " />
@@ -45,7 +45,7 @@ const ContactMe = () => {
             </div>
           </div>
 
-          <form className="flex flex-col gap-4 max-w-2xl w-full ">
+          <form className="flex flex-col gap-4 max-w-2xl w-full p-2">
             <div className="flex gap-4">
               <input
                 type="text"
@@ -67,7 +67,7 @@ const ContactMe = () => {
               placeholder="Message"
               className="w-full p-3 border border-gray-300 rounded h-32 bg-transparent  focus:outline outline-1 outline-teal-300"
             ></textarea>
-            <button className="w-1/3 bg-blue-500 text-white p-3 rounded">
+            <button className="w-full  md:w-1/4 bg-blue-500 text-white p-3 rounded">
               Send Message
             </button>
           </form>

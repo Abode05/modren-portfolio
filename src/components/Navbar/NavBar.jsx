@@ -26,7 +26,7 @@ const NavBar = () => {
     }
 
   return (
-    <div className="fixed w-full z-20  px-5 backdrop-blur-md  transition-colors duration-300  ">
+    <div className="fixed w-full z-40  px-5 backdrop-blur-md  transition-colors duration-300  ">
       <div className=" flex items-center  justify-between p-4 ">
         <a href="#" className="text-2xl font-semibold dark:text-white   ">
           Abdullatif
@@ -39,8 +39,8 @@ const NavBar = () => {
                   href={item.link}
                   className={`${
                     item.link === pathname.hash
-                      ? 'text-blue-400'
-                      : 'tex-gray-800 hover:text-blue-700 '
+                      ? 'text-teal-500'
+                      : 'text-gray-900 dark:text-gray-100  duration-150 dark:hover:text-teal-500 hover:text-teal-500 '
                   } `}
                 >
                   {item.name}
@@ -50,7 +50,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div
-          className="cursor-pointer relative sm:left-48 md:left-0  left-20  duration-150   "
+          className="cursor-pointer relative sm:left-48 md:left-0    duration-150   "
           onClick={toggleTheme}
         >
           {theme === 'light' ? (
@@ -71,13 +71,15 @@ const NavBar = () => {
         </div>
       </div>
       {toggleMenu && (
-        <div className="md:hidden h-screen z-10 bg-gray-400    ">
+        <div className="md:hidden h-screen  bg-teal-600 w-full   ">
           <nav aria-label="Global" className="relative  ">
-            <ul className="flex flex-col items-center  text-sm z-50  h-screen">
+            <ul className="flex flex-col items-center  text-lg  
+            text-gray-100 justify-start h-screen">
               {navItem.map((item, index) => (
                 <li
                   key={index}
-                  className="cursor-pointer w-full text-center relative py-10 hover:bg-gray-500 "
+                  className="cursor-pointer w-full text-center relative py-9
+                   hover:bg-teal-800 duration-150 "
                 >
                   <a
                     href={item.link}

@@ -7,7 +7,7 @@ const ProjectCard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-12 mt-16 w-full  ">
         {projectData.map((project, index) => (
           <div
-            className="card flex flex-col gap-5 bg-black/20 rounded "
+            className="card flex flex-col gap-5 bg-teal-200/10 rounded "
             key={index}
           >
             <img
@@ -19,7 +19,7 @@ const ProjectCard = () => {
             <div className="flex justify-between p-1 items-center text-xl">
               <p>{project.language}</p>
               <a href={project.link} className="text-3xl">
-                <LuArrowUpRightFromCircle  className='text-teal-600'/>
+                <LuArrowUpRightFromCircle className="text-teal-600" />
               </a>
             </div>
           </div>

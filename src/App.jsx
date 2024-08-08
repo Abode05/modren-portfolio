@@ -10,7 +10,7 @@ import ContactMe from "./components/contactMe/ContactMe"
 function App() {
 
   return (
-    <div className="dark:bg-[#1f1e25] dark:text-gray-100 text-gray-800 bg-gary-200  ">
+    <div className="dark:bg-[#1f1e25] dark:text-gray-100 text-gray-800 bg-gray-200  ">
       <NavBar />
       <div className="" id="hero">
         <Hero />

@@ -51,7 +51,7 @@ const Hero = () => {
         >
           {/* <div className="absolute w-40 h-40 bg-gradient-to-r from-transparent -z-10 to-blue-500 opacity-30 animate-pulse rounded-full  "></div> */}
 
-          <div className="absolute opacity-20 drop-shadow-[100px_60px_150px_#583FBC] top-24  w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0  to-50%  pointer-events-none" />
+          <div className="absolute opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24  w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0  to-50%  pointer-events-none" />
 
           <motion.h1
             initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const Hero = () => {
             className="text-4xl md:text-5xl   max-w-xl font-bold  dark:text-gray-200  "
           >
             <span className="font-medium ">HEY!</span>
-            <span className="drop-shadow-[0_10px_50px_#00FFFF] text-[#00FFFF] ">
+            <span className=" dark:text-[#00FFFF] text-[#548f8f] ">
               I'm Abdullatif
             </span>
             ,
@@ -70,7 +70,7 @@ const Hero = () => {
             Agency-quality Webflow websites with the personal touch of a
             freelancer.
           </p>
-          <a href="##" className="cv mt-4">
+          <a href="##" className="cv mt-4 text-black dark:text-[#22aaaa]">
             Download CV
           </a>
         </div>
@@ -82,7 +82,7 @@ const Hero = () => {
         >
           <div className="h-6 w-6 rotate-[30deg] bg-slate-300 absolute right-0 md:-left-4 top-10  z-10 rounded "></div>
           <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-5 md:-left-4 top-[40%]  rounded-full "></div>
-          <div className="h-6 w-6 rotate-[10deg] bg-slate-500 absolute right-[20%] top-8  rounded "></div>
+          <div className="h-6 w-6 rotate-[10deg] bg-[#75b1b1] absolute right-[20%] top-8  rounded "></div>
           <div className="h-6 w-6 rotate-[10deg] bg-slate-500 absolute right-[20%] top-[50%]  rounded-full "></div>
           {/* left */}
           <div className="relative mt-8 overflow-hidden">
@@ -90,7 +90,7 @@ const Hero = () => {
               initial={{ opacity: -1 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className="h-64 w-64 bg-[#408686] absolute rounded-full left-12 
+              className="h-64 w-64 bg-[#75b1b1] absolute rounded-full left-12 
              md:left-6 top-5 "
             ></motion.div>
             <motion.img
@@ -107,12 +107,12 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="relative w-full">
-        <div className="relative w-full  overflow-hidden  border-dashed   border-b-2 "></div>
+        <div className="relative w-full  overflow-hidden  border-dashed   border-b-2 bg-teal-800/50 "></div>
         <div
           className="  absolute overflow-hidden h-4 rounded-full right-[50%] -top-2 w-4
            outline-double outline-4 bottom-0  z-10 flex justify-center items-center  "
         >
-          <div className="h-2 w-2 bg-white rounded-full "></div>
+          <div className="h-2 w-2 dark:bg-white rounded-full  bg-black "></div>
         </div>
       </div>
     </>
