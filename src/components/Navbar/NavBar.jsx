@@ -1,10 +1,13 @@
-import { useLocation } from 'react-router-dom'
 import { navItem } from '../../constant/data'
 import { useEffect, useState } from 'react'
+import { HiMenuAlt3 } from 'react-icons/hi'
+import { AiOutlineClose } from 'react-icons/ai'
+import { useLocation } from 'react-router-dom'
+
 
 const NavBar = () => {
-  const { pathname } = useLocation()
-
+  const  pathname  = useLocation()
+console.log(pathname)
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
   const [toggleMenu, settoggleMenu] = useState(false)
 
@@ -28,18 +31,18 @@ const NavBar = () => {
   return (
     <div className="fixed w-full z-40 px-5 backdrop-blur-md transition-colors duration-300">
       <div className="flex items-center justify-between p-4">
-        <a href="#" className="text-2xl font-semibold dark:text-white">
+        <a href="#" className="text-4xl text-stroke-3 text-transparent    ">
           Abdullatif
         </a>
         <div className="hidden md:block dark:text-white">
-          <ul className="flex gap-6 items-center">
+          <ul className="flex gap-6 items-center -translate-x-16">
             {navItem.map((item, index) => (
               <li key={index} className="duration-200">
                 <a
                   href={item.link}
                   className={`${
-                    item.link === pathname.hash
-                      ? 'text-teal-500'
+                    item.link===pathname.hash
+                      ? 'text-teal-600'
                       : 'text-gray-900 dark:text-gray-100 duration-150 dark:hover:text-teal-500 hover:text-teal-500'
                   }`}
                 >
@@ -64,14 +67,14 @@ const NavBar = () => {
           onClick={() => settoggleMenu(!toggleMenu)}
         >
           {toggleMenu ? (
-            <img src="/assets/icons/Close.svg" alt="close" />
+            <AiOutlineClose className="text-3xl" />
           ) : (
-            <img src="/assets/icons/Menu01.svg" alt="menu" />
+            <HiMenuAlt3 className="text-3xl" />
           )}
         </div>
       </div>
       {toggleMenu && (
-        <div className="md:hidden h-screen bg-teal-600 w-full">
+        <div className="md:hidden  h-screen bg-teal-600 w-full">
           <nav aria-label="Global" className="relative">
             <ul className="flex flex-col items-center text-lg text-gray-100 justify-start h-screen">
               {navItem.map((item, index) => (

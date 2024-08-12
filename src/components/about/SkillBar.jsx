@@ -11,6 +11,7 @@ const SkillBar = ({ name, level }) => {
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           transition={{ duration: 2 }}
+          viewport={{ once: true }}
           className="h-full bg-[#16caca] rounded-full flex justify-end items-center relative "
           // style={{ width: `${level}%` }}
         >
@@ -35,8 +36,6 @@ const SkillBar = ({ name, level }) => {
                 transition={{
                   duration: 2,
                   ease: 'linear',
-                  repeat: 0,
-                  repeatType: 'loop',
                 }}
                 style={{ willChange: 'transform' }}
               />

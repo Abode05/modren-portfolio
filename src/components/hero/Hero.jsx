@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { IoMdStarOutline } from 'react-icons/io'
 
 const Hero = () => {
   const icon = {
@@ -51,7 +52,7 @@ const Hero = () => {
         >
           {/* <div className="absolute w-40 h-40 bg-gradient-to-r from-transparent -z-10 to-blue-500 opacity-30 animate-pulse rounded-full  "></div> */}
 
-          <div className="absolute opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24  w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0  to-50%  pointer-events-none" />
+          <div className="absolute  opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24  w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0  to-50%  pointer-events-none" />
 
           <motion.h1
             initial={{ opacity: 0 }}
@@ -70,7 +71,10 @@ const Hero = () => {
             Agency-quality Webflow websites with the personal touch of a
             freelancer.
           </p>
-          <a href="##" className="cv mt-4 text-black dark:text-[#22aaaa]">
+          <a
+            href="##"
+            className=" text-black dark:text-[#22aaaa] border px-7 py-3 rounded-md shadow shadow-teal-400  "
+          >
             Download CV
           </a>
         </div>
@@ -84,6 +88,8 @@ const Hero = () => {
           <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-5 md:-left-4 top-[40%]  rounded-full "></div>
           <div className="h-6 w-6 rotate-[10deg] bg-[#75b1b1] absolute right-[20%] top-8  rounded "></div>
           <div className="h-6 w-6 rotate-[10deg] bg-slate-500 absolute right-[20%] top-[50%]  rounded-full "></div>
+          <IoMdStarOutline className='absolute top-16  text-3xl text-teal-500 right-12'  />
+
           {/* left */}
           <div className="relative mt-8 overflow-hidden">
             <motion.div
@@ -91,7 +97,7 @@ const Hero = () => {
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
               className="h-64 w-64 bg-[#75b1b1] absolute rounded-full left-12 
-             md:left-6 top-5 "
+             md:left-0 top-5 "
             ></motion.div>
             <motion.img
               initial={{ x: 200, opacity: 0, translateY: 8 }}
@@ -100,8 +106,8 @@ const Hero = () => {
               viewport={{ once: true }}
               src="/assets/ph2.png"
               alt=""
-              className="relative md:-translate-x-4 
-              -translate-y-8 w-96 h-72 scale-105 object-contain  "
+              className="relative  transform md:-translate-y-24 -left-0 -top-6 
+                 object-contain w-80 h-96  "
             />
           </div>
         </motion.div>

@@ -1,10 +1,10 @@
 const navItem = [
-  { name: 'Home', link: '#' },
+  { name: 'Home', link: '#hero' },
   { name: 'About me', link: '#about' },
   { name: 'Education', link: '#experince' },
-  { name: 'Projects', link: '#projects' },
+  { name: 'projects', link: '#projects' },
   { name: 'Contact', link: '#contact' },
-];
+]
 const education = [
   {
     title: 'Experince Designer',

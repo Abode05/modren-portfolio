@@ -12,6 +12,13 @@ export default {
         'radial-gradient': 'radial-gradient(var(--tw-gradient-stops))',
         'conic-gradient':
           'conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)',
+        'custom-gradient':
+          'linear-gradient(to right, rgba(27, 253, 156, 0.1) 100%, transparent 0%, transparent 0%, rgba(27, 253, 156, 0.1) 100%)',
+      },
+      boxShadow: {
+        'custom-inset':
+          'inset 0 0 10px #359797',
+        'custom-outer': '0 0 9px 3px rgba(27, 253, 156, 0.1)',
       },
       fontFamily: {
         sans: ['var(--font-sora)', ...fontFamily.sans],
