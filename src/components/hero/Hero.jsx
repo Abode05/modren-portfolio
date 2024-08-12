@@ -96,7 +96,7 @@ const Hero = () => {
               initial={{ opacity: -1 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className="h-64 w-64 bg-[#75b1b1] absolute rounded-full left-12 
+              className="h-64 w-64 bg-[#75b1b1] absolute rounded-full left-6
              md:left-0 top-5 "
             ></motion.div>
             <motion.img
@@ -106,7 +106,7 @@ const Hero = () => {
               viewport={{ once: true }}
               src="/assets/ph2.png"
               alt=""
-              className="relative  transform md:-translate-y-24 -left-0 -top-6 
+              className="relative  transform md:-translate-y-24 md:-left-0 left-3 -top-6 
                  object-contain w-80 h-96  "
             />
           </div>
