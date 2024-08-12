@@ -15,27 +15,29 @@ const ContactMe = () => {
 
         <div className="flex flex-col md:flex-row gap-4 justify-between mt-12  ">
           <div className="flex flex-col gap-14 max-w-md w-full p-2 ">
-            <div className="flex justify-start items-center gap-2">
-              <div className="bg-slate-600 p-2 rounded-md">
-                <FaPhoneAlt className="text-xl  " />
-              </div>
-              <div className="flex flex-col">
-                <h1>call me</h1>
-                <p>+963 946449679</p>
-              </div>
-            </div>
+           
 
-            <div className="flex justify-start items-center gap-2">
-              <div className="bg-slate-600 p-2 rounded-md">
+            
+            <div className="flex justify-start items-center gap-2   ">
+              <div className="bg-teal-400 p-4 rounded-md ">
                 <FaPhoneAlt className="text-xl  " />
               </div>
-              <div className="flex flex-col">
-                <h1>call me</h1>
-                <p>+963 946449679</p>
+              <div className="flex flex-col ">
+                <h1 className="text-md text-gray-200">call me</h1>
+                <p className="font-bold">+963 946449679</p>
               </div>
             </div>
             <div className="flex justify-start items-center gap-2   ">
-              <div className="bg-slate-600 p-4 rounded-md ">
+              <div className="bg-teal-400 p-4 rounded-md ">
+                <FaPhoneAlt className="text-xl  " />
+              </div>
+              <div className="flex flex-col ">
+                <h1 className="text-md text-gray-200">call me</h1>
+                <p className="font-bold">+963 946449679</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-2   ">
+              <div className="bg-teal-400 p-4 rounded-md ">
                 <FaPhoneAlt className="text-xl  " />
               </div>
               <div className="flex flex-col ">
