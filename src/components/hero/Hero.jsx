@@ -73,7 +73,7 @@ const Hero = () => {
           </p>
           <a
             href="##"
-            className=" text-black dark:text-[#22aaaa] border px-7 py-3 rounded-md shadow shadow-teal-400  "
+            className=" text-black dark:text-[#22aaaa] hover:shadow-teal-600   hover:shadow border px-7 py-3 rounded-md shadow shadow-teal-400  "
           >
             Download CV
           </a>
