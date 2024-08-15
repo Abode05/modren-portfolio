@@ -8,14 +8,14 @@ import ContactMe from './components/contactMe/ContactMe'
 
 function App() {
   return (
-    <div className="dark:bg-[#1f1e25] dark:text-gray-100 text-gray-800 bg-gray-200  ">
+    <div className="dark:bg-[#222831] dark:text-gray-100 text-gray-800 bg-gray-200  w-full ">
       <NavBar />
-      <div className="" id="hero">
+       <div className="" id="hero">
         <Hero />
       </div>
       <div className="" id="about">
         <About />
-      </div>
+      </div> 
       <div className="" id="experince">
         <Experience />
       </div>

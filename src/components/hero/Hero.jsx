@@ -2,123 +2,98 @@ import { motion } from 'framer-motion'
 import { IoMdStarOutline } from 'react-icons/io'
 
 const Hero = () => {
-  const icon = {
-    hidden: {
-      pathLength: 0,
-      fill: 'rgba(255, 255, 255, 0)',
-    },
-    visible: {
-      pathLength: 1,
-      fill: 'rgba(255, 255, 255, 1)',
-    },
-  }
+
+
   return (
     <>
-      {/* <motion.svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        className="item absolute w-64 h-64 mt-20 fill-blue-600 bg-black left-[40%] stroke-slate-700"
-       
-      >
-        <motion.path
-          d="M0 100V0l50 50 50-50v100L75 75l-25 25-25-25z"
-          variants={icon}
-          initial="hidden"
-          animate="visible"
-          transition={{
-            default: { duration: 2, ease: 'easeInOut' },
-            fill: { duration: 2, ease: [1, 0, 0.8, 1] },
-          }}
-        />
-      </motion.svg> */}
+      {/* Background images */}
       <img
-        src="/assets/icons/Vector 1.svg "
+        src="/assets/icons/Vector 1.svg"
         alt=""
-        className="absolute  overflow-hidden right-2 bottom-6"
+        className="absolute inset-0 w-auto h-auto object-cover opacity-20 top-20"
       />
       <img
-        src="/assets/icons/Vector 3.svg "
+        src="/assets/icons/Vector 3.svg"
         alt=""
-        className="absolute  overflow-hidden right-2 bottom-6"
+        className="absolute inset-0 w-auto h-auto object-cover opacity-20 top-36"
       />
 
-      <div
-        className="py-4   px-8 min-h-screen  flex flex-col-reverse   md:flex-row
-             md:justify-between   "
-      >
-        <div
-          className="relative flex flex-col gap-4 items-center md:items-start mt-5  
-        text-center md:text-start   justify-center  z-20   "
-        >
-          {/* <div className="absolute w-40 h-40 bg-gradient-to-r from-transparent -z-10 to-blue-500 opacity-30 animate-pulse rounded-full  "></div> */}
-
-          <div className="absolute  opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24  w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0  to-50%  pointer-events-none" />
+      <div className="py-4 px-8 min-h-screen flex flex-col-reverse md:flex-row md:justify-between">
+        {/* Text and CTA */}
+        <div className="relative  flex flex-col gap-4 items-center md:items-start text-center md:text-start justify-center z-20">
+          <div className="absolute opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24 w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0 to-50% pointer-events-none" />
+          {/* <div className="absolute w-full h-full bg-gradient-to-r from-teal-500 to-transparent opacity-20 rounded-full transform -rotate-12 -z-10" /> */}
 
           <motion.h1
             initial={{ opacity: 0 }}
             transition={{ duration: 1.4 }}
             whileInView={{ opacity: 1 }}
-            className="text-4xl md:text-5xl   max-w-xl font-bold  dark:text-gray-200  "
+            className="text-4xl md:text-5xl max-w-xl font-extrabold dark:text-gray-200"
           >
-            <span className="font-medium ">HEY!</span>
-            <span className=" dark:text-[#00FFFF] text-[#548f8f] ">
+            <span className="font-medium">HEY!</span>
+            <span className="dark:text-[#00fff5] text-[#548f8f]">
               I'm Abdullatif
             </span>
-            ,
-            <br /> Frontend Developer
+            ,<br /> Frontend Developer
           </motion.h1>
-          <p className="w-full max-w-xs text-lg text-gray-500 font-medium">
+          <p className="w-full max-w-lg text-lg md:text-xl text-gray-800 dark:text-[#00adb5] font-medium">
             Agency-quality Webflow websites with the personal touch of a
             freelancer.
           </p>
           <a
             href="##"
-            className=" text-black dark:text-[#22aaaa] hover:shadow-teal-600   hover:shadow border px-7 py-3 rounded-md shadow shadow-teal-400  "
+            className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4 rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
           >
             Download CV
           </a>
         </div>
+
+        {/* Image and Decorative Elements */}
         <motion.div
-          initial={{ opacity: -1 }}
+          initial={{ opacity: 0 }}
           transition={{ duration: 3 }}
           whileInView={{ opacity: 1 }}
-          className="mt-12 flex justify-center  relative  md:justify-end "
+          className="relative mt-12 flex justify-center md:justify-end  "
         >
-          <div className="h-6 w-6 rotate-[30deg] bg-slate-300 absolute right-0 md:-left-4 top-10  z-10 rounded "></div>
-          <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-5 md:-left-4 top-[40%]  rounded-full "></div>
-          <div className="h-6 w-6 rotate-[10deg] bg-[#75b1b1] absolute right-[20%] top-8  rounded "></div>
-          <div className="h-6 w-6 rotate-[10deg] bg-slate-500 absolute right-[20%] top-[50%]  rounded-full "></div>
-          <IoMdStarOutline className='absolute top-16  text-3xl text-teal-500 right-12'  />
 
-          {/* left */}
-          <div className="relative mt-8 overflow-hidden">
+          {/* Left-side Image */}
+          <div className="relative  overflow-hidden    w-96 flex justify-center items-start md:-left-5 ">
+            <div className="absolute md:top-7  md:left-10 z-10 flex  rotate-12 animate-pulse left-6 top-4">
+              <IoMdStarOutline className="absolute text-3xl text-teal-300  top-1.5 -left-5 transform rotate-45" />
+              <IoMdStarOutline className="text-2xl text-teal-400 absolute " />
+              <IoMdStarOutline className="text-2xl text-teal-500 absolute top-6" />
+            </div>
+            {/* shape 2 */}
+            <div className="absolute md:top-7  md:right-10 z-10 flex  rotate-12  right-6 top-4">
+              <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-6 top-1 z-10 rounded" />
+              <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-10 top-0 z-10 rounded" />
+              <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-4 md:-right-0 top-10 rounded-full" />
+            </div>
             <motion.div
-              initial={{ opacity: -1 }}
+              initial={{ opacity: 0 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className="h-64 w-64 bg-[#75b1b1] absolute rounded-full left-6
-             md:left-0 top-5 "
-            ></motion.div>
-            <motion.img
-              initial={{ x: 200, opacity: 0, translateY: 8 }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ x: 0, opacity: 1, translateY: -6 }}
-              viewport={{ once: true }}
-              src="/assets/ph2.png"
-              alt=""
-              className="relative  transform md:-translate-y-24 md:-left-0 left-3 -top-6 
-                 object-contain w-80 h-96  "
-            />
+              className=" h-64 w-64 mb-2 md:h-64 mt-10 md:w-64 bg-[#00adb5] relative   rounded-full flex justify-center items-center  "
+            >
+              <motion.img
+                initial={{ x: 200, opacity: 0, translateY: 8 }}
+                transition={{ duration: 1.2 }}
+                whileInView={{ x: 0, opacity: 1, translateY: -6 }}
+                viewport={{ once: true }}
+                src="/assets/ph2.png"
+                alt=""
+                className=" transform   object-cover absolute w-80 h-80 mx-auto -top-14  md:rounded-full "
+              />
+            </motion.div>
           </div>
         </motion.div>
       </div>
+
+      {/* Decorative Bottom Border */}
       <div className="relative w-full">
-        <div className="relative w-full  overflow-hidden  border-dashed   border-b-2 bg-teal-800/50 "></div>
-        <div
-          className="  absolute overflow-hidden h-4 rounded-full right-[50%] -top-2 w-4
-           outline-double outline-4 bottom-0  z-10 flex justify-center items-center  "
-        >
-          <div className="h-2 w-2 dark:bg-white rounded-full  bg-black "></div>
+        <div className="relative w-full overflow-hidden border-dashed border-b-2 bg-teal-800/50" />
+        <div className="absolute overflow-hidden h-4 rounded-full right-1/2 -top-2 w-4 outline-double outline-4 bottom-0 z-10 flex justify-center items-center">
+          <div className="h-2 w-2 dark:bg-white bg-black rounded-full" />
         </div>
       </div>
     </>
@@ -126,3 +101,79 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+
+  // const icon = {
+  //   hidden: {
+  //     pathLength: 0,
+  //     fill: 'rgba(255, 255, 255, 0)',
+  //   },
+  //   visible: {
+  //     pathLength: 1,
+  //     fill: 'rgba(255, 255, 255, 1)',
+  //   },
+  
+
+  
+      {/* Background Images */}
+      {/* <img
+       
+  
+
+      <div className="py-8 px-6 md:py-16 md:px-12 min-h-screen flex flex-col-reverse md:flex-row md:justify-between"> */}
+        {/* Text and CTA */}
+        {/* <div className="relative flex flex-col gap-6 items-center md:items-start text-center md:text-start justify-center z-20">
+          <div className="absolute w-full h-full bg-gradient-to-r from-teal-500 to-transparent opacity-20 rounded-full transform -rotate-12 -z-10" />
+
+          <motion.h1
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.4 }}
+            whileInView={{ opacity: 1 }}
+            className="text-4xl md:text-6xl font-extrabold dark:text-gray-200"
+          >
+       
+         
+           
+        </div> */}
+
+        {/* Image and Decorative Elements */}
+        {/* <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1 }}
+          className="relative mt-12 flex justify-center md:justify-end"
+        >
+          <div className="absolute top-10 right-0 md:right-4 z-10">
+            <IoMdStarOutline className="text-4xl text-teal-300 animate-pulse" />
+            <IoMdStarOutline className="text-4xl text-teal-400 animate-pulse" />
+            <IoMdStarOutline className="text-4xl text-teal-500 animate-pulse" />
+          </div>
+
+          <div className="relative mt-8 overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0 }}
+              transition={{ duration: 2 }}
+              whileInView={{ opacity: 1 }}
+              className="h-64 w-64 md:h-80 md:w-80 bg-teal-200 absolute rounded-full left-4 md:left-6 top-5"
+            />
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              src="/assets/ph2.png"
+              alt="Profile Image"
+              className="relative transform md:-translate-y-16 left-0 top-6 object-cover w-64 h-80 md:w-80 md:h-96 rounded-md shadow-lg"
+            />
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Decorative Bottom Border */}
+      // <div className="relative w-full">
+      //   <div className="relative w-full overflow-hidden border-dashed border-b-2 bg-teal-800/50" />
+      //   <div className="absolute overflow-hidden h-4 rounded-full right-1/2 -top-2 w-4 outline-double outline-4 bottom-0 z-10 flex justify-center items-center">
+      //     <div className="h-2 w-2 dark:bg-white bg-black rounded-full" />
+      //   </div>
+      // </div>
+
