@@ -73,16 +73,16 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className=" h-64 w-64 mb-2 md:h-64 mt-10 md:w-64 bg-[#00adb5] relative   rounded-full flex justify-center items-center  "
+              className=" h-64 w-64 mb-2 md:h-52 mt-10 md:w-64 scale-150 bg-[#00adb5] relative mt-32  rounded-full flex justify-center items-center  "
             >
               <motion.img
                 initial={{ x: 200, opacity: 0, translateY: 8 }}
                 transition={{ duration: 1.2 }}
                 whileInView={{ x: 0, opacity: 1, translateY: -6 }}
                 viewport={{ once: true }}
-                src="/assets/ph2.png"
+                src="/assets/phnn.png"
                 alt=""
-                className=" transform   object-cover absolute w-80 h-80 mx-auto -top-14  md:rounded-full "
+                className=" transform  scale-150  absolute object-contain h-[350px] mx-auto -top-16   "
               />
             </motion.div>
           </div>

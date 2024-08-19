@@ -1,96 +1,81 @@
-import React from 'react'
 import { education } from '../../constant/data'
-// src/ExperienceTimeline.js
-
-// src/ExperienceTimeline.js
- 
-
-
-
-
 
 const Experience = () => {
   return (
-    <div className="container min-h-screen flex flex-col items-center justify-center   relative ">
-      <div className="relative">
-        {/* top shape */}
-        <div className="h-8 w-8 bg-teal-600 rounded-md absolute right-24 -top-1 md:top-3"></div>
-        <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-12 top-24"></div>
-        <div className="h-4 w-4 bg-teal-600 rounded-full absolute right-48 -top-6"></div>
-        {/* bottom shape */}
-        <div className="h-8 w-8 bg-teal-600 rounded-md absolute left-4 -bottom-4"></div>
-        <div className="h-4 w-4 bg-teal-600 rounded-full absolute -left-0 md:-left-6 bottom-20"></div>
-        <div className="h-4 w-4 bg-teal-600 rounded-full absolute left-32 -bottom-12"></div>
-        <div className="text-center mb-6">
-          <p className="text-teal-400">Education and Experience</p>
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Education & Experience
-          </h2>
-        </div>
+    <div className="container min-h-[700px] relative px-6">
+      <div className="relative flex justify-center items-center">
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-10 -bottom-5"></div>
+        <div className="h-8 w-8 bg-teal-500 rounded-md absolute -left-4 bottom-6"></div>
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-12 bottom-20"></div>
+        <div className="relative mt-16 w-full  py-5">
+          {/* Decorative shapes */}
 
-        <div className="flex justify-around items-center gap-10 p-6 ">
-          <div className="flex flex-col gap-20 ">
-            <div className="flex items-start space-x-4">
-              <div className="flex flex-col items-center">
-                <div className="z-10 w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="absolute h-48 border-l-2 border-dotted border-gray-400"></div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold">Experience Designer</h3>
-                <p className="text-gray-500 max-w-md ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lacus nunc, posuere in justo vulputate, bibendum sodales
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="h-16 border-l-2 border-dotted border-gray-400"></div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold">Frontend Developer</h3>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lacus nunc, posuere in justo vulputate, bibendum sodales
-                </p>
-              </div>
-            </div>
+          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-28 top-0"></div>
+          <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-16 top-6"></div>
+          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-10 top-20"></div>
+          {/* bottom */}
+
+          {/* Header */}
+          <div className="text-center mb-6">
+            <p className="text-teal-700">Education and Experience</p>
+            <h2 className="text-3xl font-bold text-center mb-8 text-teal-600">
+              Education & Experience
+            </h2>
           </div>
-          <div className="flex flex-col gap-20 ">
-            <div className="flex items-start space-x-4">
-              <div className="flex flex-col items-center">
-                <div className="z-10 w-4 h-4 bg-blue-500 rounded-full "></div>
-                <div className="absolute h-48 border-l-2 border-dotted border-gray-400"></div>
+
+          {/* Timeline */}
+          <div className="relative flex justify-center items-center translate-x-5  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl justify-around   gap-16 mt-4 relative px-4 text-md w-full ">
+              {/* Left dashed border */}
+              <div className="absolute h-full left-[5%] lg:left-0 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="relative h-full border-l-2 border-dashed border-black dark:border-gray-200 flex flex-col">
+                  <img
+                    src="/assets/icons/cycle.svg"
+                    alt=""
+                    className="w-5 h-5 z-50 absolute    transform -translate-x-1/2 top-[25%] md:top-[60%]"
+                  />
+                  <img
+                    src="/assets/icons/cycle.svg"
+                    alt=""
+                    className="w-5 h-5 z-50  left-1/2 transform -translate-x-1/2 bottom-[5%] md:bottom-0"
+                  />
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold">Experience Designer</h3>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lacus nunc, posuere in justo vulputate, bibendum sodales
-                </p>
+              {/* Right dashed border */}
+              <div className="absolute h-full md:left-[56%] dark:border-white border-black lg:left-[52%] hidden transform -translate-x-1/2 md:flex items-center justify-center">
+                <div className="relative h-full border-l-2 border-dashed border-black dark:border-gray-200 flex flex-col">
+                  <img
+                    src="/assets/icons/cycle.svg"
+                    alt=""
+                    className="w-5 h-5 z-50 absolute    transform -translate-x-1/2 top-[25%] md:top-[60%]"
+                  />
+                  <img
+                    src="/assets/icons/cycle.svg"
+                    alt=""
+                    className="w-5 h-5 z-50  left-1/2 transform -translate-x-1/2 bottom-[5%] md:bottom-0"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                <div className="h-16 border-l-2 border-dotted border-gray-400"></div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold">Frontend Developer</h3>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  lacus nunc, posuere in justo vulputate, bibendum sodales
-                </p>
-              </div>
+
+              {/* <div className="border-l-2 absolute h-full md:left-[52%] border-dashed"></div> */}
+
+              {/* Education/Experience Items */}
+              {education.map((item, index) => (
+                <div key={index} className="max-w-md px-2  ">
+                  <h1 className="text-3xl font-semibold text-teal-500">
+                    {item.title}
+                  </h1>
+                  <p className="max-w-md text-lg dark:text-gray-200 ">
+                    {item.content}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </div>
   )
-};
-
-
+}
 
 export default Experience

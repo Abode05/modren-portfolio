@@ -27,8 +27,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className="fixed w-full z-40 px-5 backdrop-blur-md transition-colors duration-300">
-      <div className="flex items-center justify-between p-4 w-full ">
+    <div className="fixed w-full z-40 px-5 backdrop-blur-md container transition-colors duration-300">
+      <div className="flex items-center justify-between px-4  py-4 w-full ">
         <a
           href="#"
           className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-600"
@@ -70,7 +70,7 @@ const NavBar = () => {
 
         {/* Mobile Menu Toggle */}
         <div
-          className="block md:hidden cursor-pointer"
+          className="block md:hidden cursor-pointer z-50"
           onClick={() => setToggleMenu(!toggleMenu)}
         >
           {toggleMenu ? (

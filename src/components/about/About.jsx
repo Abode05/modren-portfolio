@@ -21,18 +21,29 @@ const About = () => {
               src="/assets/icons/html.svg"
               alt="HTML5"
               className="z-20 absolute top-0 md:-top-8 left-[35%]"
-              whileHover={{ rotate: 360, transition: { duration: 1 } }}
+              whileHover={{ rotate: 360, transition: { duration: 2 } }}
             />
             <motion.img
-              src="/assets/icons/github.svg"
+              src="/assets/icons/css.svg"
               alt="GitHub"
-              className="h-20 w-20 absolute bottom-0 md:-bottom-4 left-40 bg-gray-800 rounded-full"
+              className="h-20 w-20 absolute bottom-0 md:-bottom-4 left-40 "
               whileHover={{ rotate: 360, transition: { duration: 1 } }}
             />
             <motion.img
               src="/assets/icons/figma.svg"
               alt="Figma"
-              className="h-20 w-20 absolute bottom-40 md:bottom-40 right-10 md:right-12"
+              className="h-20 w-20 absolute  md:bottom-40 right-20 md:right-12"
+            />
+            <motion.img
+              src="/assets/icons/github.svg"
+              alt="Figma"
+              className="h-16 w-16 absolute bottom-40 md:bottom-40 left-0 md:left-0 bg-gray-800 rounded-full object-cover "
+            />
+            <motion.img
+              src="/assets/icons/reactt.svg"
+              alt="Figma"
+              whileHover={{ rotate: 360, transition: { duration: 2 } }}
+              className="h-20 w-20 absolute left-32 md:top-[40%] md:left-40 drop-shadow-[0_5px_40px_#288f8b] "
             />
           </div>
         </div>
