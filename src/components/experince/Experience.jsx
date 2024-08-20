@@ -24,7 +24,7 @@ const Experience = () => {
           </div>
 
           {/* Timeline */}
-          <div className="relative flex justify-center items-center translate-x-5  ">
+          <div className="relative flex justify-center items-center md:translate-x-10  ">
             <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl justify-around   gap-16 mt-4 relative px-4 text-md w-full ">
               {/* Left dashed border */}
               <div className="absolute h-full left-[5%] lg:left-0 transform -translate-x-1/2 flex items-center justify-center">

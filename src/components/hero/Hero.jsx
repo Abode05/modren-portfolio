@@ -10,12 +10,12 @@ const Hero = () => {
       <img
         src="/assets/icons/Vector 1.svg"
         alt=""
-        className="absolute inset-0 w-auto h-auto object-cover opacity-20 top-20"
+        className="absolute inset-0 w-auto h-auto object-cover opacity-100 top-20 "
       />
       <img
         src="/assets/icons/Vector 3.svg"
         alt=""
-        className="absolute inset-0 w-auto h-auto object-cover opacity-20 top-36"
+        className="absolute inset-0 w-auto h-auto object-cover opacity-100  top-36"
       />
 
       <div className="py-4 px-8 min-h-screen flex flex-col-reverse md:flex-row md:justify-between">
@@ -53,27 +53,33 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           transition={{ duration: 3 }}
           whileInView={{ opacity: 1 }}
-          className="relative mt-12 flex justify-center md:justify-end  "
+          className="relative mt-12 first-line: flex justify-center md:justify-end  "
         >
-
           {/* Left-side Image */}
-          <div className="relative  overflow-hidden    w-96 flex justify-center items-start md:-left-5 ">
-            <div className="absolute md:top-7  md:left-10 z-10 flex  rotate-12 animate-pulse left-6 top-4">
-              <IoMdStarOutline className="absolute text-3xl text-teal-300  top-1.5 -left-5 transform rotate-45" />
-              <IoMdStarOutline className="text-2xl text-teal-400 absolute " />
-              <IoMdStarOutline className="text-2xl text-teal-500 absolute top-6" />
-            </div>
+          <div className="relative     mt-4 w-96 flex justify-center items-start ">
+            <IoMdStarOutline className="absolute text-3xl text-teal-500  top-8  right-2 transform rotate-45 animate-pulse" />
+            <IoMdStarOutline className="text-2xl text-teal-500 absolute right-0 top-14 animate-pulse" />
+            <IoMdStarOutline className="text-2xl text-teal-500 absolute right-8 top-8 animate-pulse " />
+            {/*  */}
+            <div className="h-8 w-8 rotate-[30deg] bg-teal-400 absolute left-0 top-11 rounded" />
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-600 absolute left-0 top-24 rounded" />
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-600 absolute left-12 top-8 rounded" />
+            {/*  */}
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute right-4  bottom-32 rounded-full" />
+            <div className="h-2 w-2 rotate-[30deg] bg-teal-200 absolute right-16  bottom-32 rounded-full z-20" />
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute left-4  bottom-32 rounded" />
+
             {/* shape 2 */}
-            <div className="absolute md:top-7  md:right-10 z-10 flex  rotate-12  right-6 top-4">
+            {/* <div className="absolute md:top-7  md:right-10 z-10 flex  rotate-12  right-6 top-4">
               <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-6 top-1 z-10 rounded" />
               <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-10 top-0 z-10 rounded" />
               <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-4 md:-right-0 top-10 rounded-full" />
-            </div>
+            </div> */}
             <motion.div
               initial={{ opacity: 0 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className=" h-64 w-64 mb-2 md:h-52 mt-10 md:w-64 scale-150 bg-[#00adb5] relative mt-32  rounded-full flex justify-center items-center  "
+              className=" h-64 w-64 mb-2 md:h-64 mt-10 md:w-64 md:scale-150 bg-[#00adb5] relative md:mt-24  rounded-full flex justify-center items-center  "
             >
               <motion.img
                 initial={{ x: 200, opacity: 0, translateY: 8 }}
@@ -82,7 +88,7 @@ const Hero = () => {
                 viewport={{ once: true }}
                 src="/assets/phnn.png"
                 alt=""
-                className=" transform  scale-150  absolute object-contain h-[350px] mx-auto -top-16   "
+                className=" transform  scale-150  absolute object-cover h-[300px] mx-auto -top-8 rounded-full   "
               />
             </motion.div>
           </div>

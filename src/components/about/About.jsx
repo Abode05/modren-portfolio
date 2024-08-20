@@ -32,7 +32,7 @@ const About = () => {
             <motion.img
               src="/assets/icons/figma.svg"
               alt="Figma"
-              className="h-20 w-20 absolute  md:bottom-40 right-20 md:right-12"
+              className="h-20 w-20 absolute  md:bottom-40 right-16  md:right-12"
             />
             <motion.img
               src="/assets/icons/github.svg"
