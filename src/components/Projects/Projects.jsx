@@ -13,6 +13,7 @@ const Projects = () => {
             </h1>
           </div>
           <a 
+          target='_blank'
             href="https://github.com/Abode05"
             className="px-4 py-2 bg-teal-700  text-gray-100 rounded-md hover:bg-teal-800 duration-200"
           >
