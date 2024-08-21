@@ -40,8 +40,9 @@ const Hero = () => {
             Agency-quality Webflow websites with the personal touch of a
             freelancer.
           </p>
-          <a
-            href="##"
+           <a
+            href="/public/AbdullatifCV[1].pdf"
+            download
             className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4 rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
           >
             Download CV
