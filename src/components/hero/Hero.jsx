@@ -2,8 +2,6 @@ import { motion } from 'framer-motion'
 import { IoMdStarOutline } from 'react-icons/io'
 
 const Hero = () => {
-
-
   return (
     <>
       {/* Background images */}
@@ -41,7 +39,7 @@ const Hero = () => {
             freelance
           </p>
           <a
-            href="/public/AbdullatifCV[1].pdf"
+            href="/public/AbdullatifCV.pdf"
             download
             className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4 rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
           >
@@ -108,28 +106,31 @@ const Hero = () => {
 
 export default Hero
 
+// const icon = {
+//   hidden: {
+//     pathLength: 0,
+//     fill: 'rgba(255, 255, 255, 0)',
+//   },
+//   visible: {
+//     pathLength: 1,
+//     fill: 'rgba(255, 255, 255, 1)',
+//   },
 
-
-  // const icon = {
-  //   hidden: {
-  //     pathLength: 0,
-  //     fill: 'rgba(255, 255, 255, 0)',
-  //   },
-  //   visible: {
-  //     pathLength: 1,
-  //     fill: 'rgba(255, 255, 255, 1)',
-  //   },
-  
-
-  
-      {/* Background Images */}
-      {/* <img
+{
+  /* Background Images */
+}
+{
+  /* <img
        
   
 
-      <div className="py-8 px-6 md:py-16 md:px-12 min-h-screen flex flex-col-reverse md:flex-row md:justify-between"> */}
-        {/* Text and CTA */}
-        {/* <div className="relative flex flex-col gap-6 items-center md:items-start text-center md:text-start justify-center z-20">
+      <div className="py-8 px-6 md:py-16 md:px-12 min-h-screen flex flex-col-reverse md:flex-row md:justify-between"> */
+}
+{
+  /* Text and CTA */
+}
+{
+  /* <div className="relative flex flex-col gap-6 items-center md:items-start text-center md:text-start justify-center z-20">
           <div className="absolute w-full h-full bg-gradient-to-r from-teal-500 to-transparent opacity-20 rounded-full transform -rotate-12 -z-10" />
 
           <motion.h1
@@ -141,10 +142,14 @@ export default Hero
        
          
            
-        </div> */}
+        </div> */
+}
 
-        {/* Image and Decorative Elements */}
-        {/* <motion.div
+{
+  /* Image and Decorative Elements */
+}
+{
+  /* <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 2 }}
           whileInView={{ opacity: 1 }}
@@ -175,11 +180,11 @@ export default Hero
         </motion.div>
       </div>
 
-      {/* Decorative Bottom Border */}
-      // <div className="relative w-full">
-      //   <div className="relative w-full overflow-hidden border-dashed border-b-2 bg-teal-800/50" />
-      //   <div className="absolute overflow-hidden h-4 rounded-full right-1/2 -top-2 w-4 outline-double outline-4 bottom-0 z-10 flex justify-center items-center">
-      //     <div className="h-2 w-2 dark:bg-white bg-black rounded-full" />
-      //   </div>
-      // </div>
-
+      {/* Decorative Bottom Border */
+}
+// <div className="relative w-full">
+//   <div className="relative w-full overflow-hidden border-dashed border-b-2 bg-teal-800/50" />
+//   <div className="absolute overflow-hidden h-4 rounded-full right-1/2 -top-2 w-4 outline-double outline-4 bottom-0 z-10 flex justify-center items-center">
+//     <div className="h-2 w-2 dark:bg-white bg-black rounded-full" />
+//   </div>
+// </div>
