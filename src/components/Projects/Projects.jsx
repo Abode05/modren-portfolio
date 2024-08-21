@@ -12,8 +12,8 @@ const Projects = () => {
               <span className="text-teal-500">Projects</span>
             </h1>
           </div>
-          <a
-            href="#"
+          <a 
+            href="https://github.com/Abode05"
             className="px-4 py-2 bg-teal-700  text-gray-100 rounded-md hover:bg-teal-800 duration-200"
           >
             {' '}

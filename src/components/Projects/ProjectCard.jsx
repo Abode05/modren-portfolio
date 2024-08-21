@@ -18,7 +18,7 @@ const ProjectCard = () => {
             <h1 className="text-2xl font-bold  ">{project.name}</h1>
             <div className="flex justify-between p-1 items-center text-xl">
               <p>{project.language}</p>
-              <a href={project.link} className="text-3xl">
+              <a href={project.link} className="text-3xl" target='_blank'>
                 <LuArrowUpRightFromCircle className="text-teal-600 hover:text-teal-800 duration-200" />
               </a>
             </div>

@@ -62,11 +62,10 @@ const Hero = () => {
             <IoMdStarOutline className="text-2xl text-teal-500 absolute right-8 top-8 animate-pulse " />
             {/*  */}
             <div className="h-8 w-8 rotate-[30deg] bg-teal-400 absolute left-0 top-11 rounded" />
-            <div className="h-4 w-4 rotate-[30deg] bg-teal-600 absolute left-0 top-24 rounded" />
             <div className="h-4 w-4 rotate-[30deg] bg-teal-600 absolute left-12 top-8 rounded" />
             {/*  */}
             <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute right-4  bottom-32 rounded-full" />
-            <div className="h-2 w-2 rotate-[30deg] bg-teal-200 absolute right-16  bottom-32 rounded-full z-20" />
+            <div className="h-2 w-2 rotate-[30deg] bg-teal-200 absolute right-10 md:right-16  bottom-32 rounded-full z-20" />
             <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute left-4  bottom-32 rounded" />
 
             {/* shape 2 */}

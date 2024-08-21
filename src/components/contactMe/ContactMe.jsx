@@ -1,5 +1,7 @@
 import { FaPhoneAlt } from 'react-icons/fa'
 import Swal from 'sweetalert2'
+import { MdEmail } from 'react-icons/md'
+import { CiLocationOn } from 'react-icons/ci'
 
 
 const ContactMe = () => {
@@ -44,7 +46,7 @@ const ContactMe = () => {
         <div className="">
           <p className="text-lg text-teal-600 font-semibold mb-2">Contact</p>
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center  ">
-            <h1 className="text-4xl  font-bold">
+            <h1 className="text-4xl  font-bold mb-1">
               Let’s Discuss Your <span className="text-teal-500">Project</span>
             </h1>
             <div className="loader"></div>
@@ -58,15 +60,38 @@ const ContactMe = () => {
                 <FaPhoneAlt className="text-xl  " />
               </div>
               <div className="flex flex-col ">
-                <h1 className="text-md dark:text-gray-200 text-teal-700 text-lg font-semibold ">Call me</h1>
+                <h1 className="text-md dark:text-gray-200 text-teal-700 text-lg font-semibold ">
+                  Call me
+                </h1>
                 <p className="font-bold">+963 946449679</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-2   ">
+              <div className="bg-teal-400 p-4 rounded-md ">
+                <MdEmail className="text-xl" />
+              </div>
+              <div className="flex flex-col ">
+                <h1 className="text-md dark:text-gray-200 text-teal-700 text-lg font-semibold ">
+                  Email me
+                </h1>
+                <p className="font-bold">abdullatifsalaas@gmail.com</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-2   ">
+              <div className="bg-teal-400 p-4 rounded-md ">
+                <CiLocationOn className='text-xl' />
+              </div>
+              <div className="flex flex-col ">
+                <h1 className="text-md dark:text-gray-200 text-teal-700 text-lg font-semibold ">
+                  Adress Me
+                </h1>
+                <p className="font-bold">Damascus,Syria</p>
               </div>
             </div>
           </div>
 
           <form
             onSubmit={onSubmit}
-            
             className="flex flex-col gap-4 max-w-2xl w-full p-2"
           >
             <div className="flex gap-4">
@@ -75,14 +100,12 @@ const ContactMe = () => {
                 name="name"
                 placeholder="Full name"
                 className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
-            
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your email"
                 className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
-               
               />
             </div>
             <input
@@ -90,13 +113,11 @@ const ContactMe = () => {
               name="phone"
               placeholder="Phone number"
               className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
-            
             />
             <textarea
               name="message"
               placeholder="Message"
               className="w-full p-3 border border-gray-300 rounded h-32 bg-transparent focus:outline outline-1 outline-teal-300"
-              
             ></textarea>
             <button
               type="submit"

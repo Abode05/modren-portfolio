@@ -1,3 +1,6 @@
+import { CiLocationOn } from "react-icons/ci"
+import { FaArrowRight } from "react-icons/fa"
+
 const Banner = () => {
   return (
     <div className="container mt-8 p-10 relative max-w-6xl w-full z-20 overflow-hidden">
@@ -35,7 +38,9 @@ const Banner = () => {
             href="#contact"
             className="px-6 py-2 rounded bg-teal-900 mt-4 text-white hover:bg-teal-800"
           >
-            Get in Touch
+            <span className="flex justify-center items-center gap-4">
+              contact <FaArrowRight />
+            </span>{' '}
           </a>
         </div>
       </div>

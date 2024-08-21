@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
-
-const SkillBar = ({ name, level }) => {
+const skillicon = [{ img: '/assets/icons/html.svg' },{
+  img:"/assets/icons/css.svg"
+}]
+const SkillBar = ({ name, level,img }) => {
   return (
     <div className="mb-4 mt-12 text-gray-900 dark:text-gray-200">
       <div className="flex justify-between mb-1">
@@ -12,7 +14,7 @@ const SkillBar = ({ name, level }) => {
           whileInView={{ width: `${level}%` }}
           transition={{ duration: 2 }}
           viewport={{ once: true }}
-          className="h-full  bg-[#00adb5] rounded-full flex justify-end items-center relative"
+          className="h-full  bg-[#00adb5] rounded-full flex justify-end  items-center relative"
         >
           <div
             className="w-0 h-0 border-t-[15.6px] border-l-[10px] border-l-transparent
@@ -20,15 +22,15 @@ const SkillBar = ({ name, level }) => {
           ></div>
           <div className="absolute -top-14 -right-2">
             <div
-              className="relative bg-[#00adb5] dark:bg-[#00adb5] border-2 border-[#00FFF5] dark:border-[#00adb5]
-              rounded-md px-1 py-1 flex justify-between items-center overflow-hidden shadow-lg"
+              className="relative bg-teal-600 dark:bg-teal-600 border-2 border-teal-600 dark:border-teal-600
+              rounded-md px-1 py-1 flex justify-between gap-1 items-center overflow-hidden shadow-lg"
             >
               <img
-                src="/assets/icons/html.svg"
-                className="w-6 h-6 object-cover"
+                src={img}
+                className="w-7 h-7 object-cover rounded "
                 alt="Icon"
               />
-              <p className="text-xs  font-semibold">{level}%</p>
+              <p className="text-xs text-white  font-bold">{level}%</p>
               <motion.div
                 className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
                 initial={{ x: '-100%' }}

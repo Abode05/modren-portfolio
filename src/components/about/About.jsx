@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import SkillBar from './SkillBar'
 
 const skills = [
-  { name: 'HTML5', level: 90 },
-  { name: 'CSS3', level: 80 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'React', level: 95 },
+  { name: 'HTML5', level: 90, img: '/assets/icons/html.svg' },
+  { name: 'CSS3', level: 80, img: '/assets/icons/css.svg' },
+  { name: 'JavaScript', level: 85, img: '/assets/icons/js.svg' },
+  { name: 'React', level: 95 ,img: '/assets/icons/reactt.svg'},
 ]
 
 const About = () => {
@@ -51,13 +51,21 @@ const About = () => {
           <h1 className="text-4xl mb-4   font-semibold text-[#288f8b]">
             About Me
           </h1>
-          <p className="mb-6 text-lg md:text-xl dark:text-gray-200 text-[#104346]">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-            nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
-            tempus pharetra
+          <p className="mb-6 text-md md:text-lg font-semibold dark:text-gray-200 ">
+            I am Abdullatif Salaas, a frontend developer specializing in
+            React.js. My journey in web development began when I joined the Arab
+            International University in Syria in 2021, where I discovered my
+            true passion for this field. I am currently working on building my
+            personal website to showcase my projects, and I am always looking to
+            develop my skills and advance my career. 
           </p>
           {skills.map((skill) => (
-            <SkillBar key={skill.name} name={skill.name} level={skill.level} />
+            <SkillBar
+              key={skill.name}
+              name={skill.name}
+              level={skill.level}
+              img={skill.img}
+            />
           ))}
         </div>
       </div>
