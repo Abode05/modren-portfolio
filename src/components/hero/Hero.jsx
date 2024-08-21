@@ -38,10 +38,11 @@ const Hero = () => {
           </motion.h1>
           <p className="w-full max-w-lg text-lg md:text-xl text-gray-800 dark:text-[#00adb5] font-medium">
             Agency-quality Webflow websites with the personal touch of a
-            freelancer.
+            freelance
           </p>
           <a
-            href="##"
+            href="/public/AbdullatifCV[1].pdf"
+            download
             className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4 rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
           >
             Download CV
