@@ -84,9 +84,9 @@ const Hero = () => {
                 transition={{ duration: 1.2 }}
                 whileInView={{ x: 0, opacity: 1, translateY: -6 }}
                 viewport={{ once: true }}
-                src="/assets/phnn.png"
+                src="/assets/phh2.png"
                 alt=""
-                className=" transform  scale-150  absolute object-cover h-[300px] mx-auto -top-8 rounded-full   "
+                className=" transform bg-transparent scale-150  absolute object-cover h-[300px] mx-auto -top-8 rounded-full   "
               />
             </motion.div>
           </div>
