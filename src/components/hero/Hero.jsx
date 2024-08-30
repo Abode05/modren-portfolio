@@ -24,7 +24,7 @@ const Hero = () => {
 
           <motion.h1
             initial={{ opacity: 0 }}
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 1.8 }}
             whileInView={{ opacity: 1 }}
             className="text-4xl md:text-5xl max-w-xl font-extrabold dark:text-gray-200"
           >
@@ -82,7 +82,7 @@ const Hero = () => {
               <motion.img
                 initial={{ x: 200, opacity: 0, translateY: 8 }}
                 transition={{ duration: 1.2 }}
-                whileInView={{ x: 0, opacity: 1, translateY: -6 }}
+                animate={{ x: 0, opacity: 1, translateY: -6 }}
                 viewport={{ once: true }}
                 src="/assets/phh2.png"
                 alt=""

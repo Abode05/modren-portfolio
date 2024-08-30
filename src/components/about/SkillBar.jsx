@@ -4,7 +4,10 @@ const skillicon = [{ img: '/assets/icons/html.svg' },{
 }]
 const SkillBar = ({ name, level,img }) => {
   return (
-    <div className="mb-4 mt-12 text-gray-900 dark:text-gray-200">
+    <div
+      
+      className="mb-4 mt-12 text-gray-900 dark:text-gray-200"
+    >
       <div className="flex justify-between mb-1">
         <span className="font-bold">{name}</span>
       </div>

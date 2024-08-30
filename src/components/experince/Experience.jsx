@@ -1,8 +1,9 @@
 import { education } from '../../constant/data'
+import { motion } from 'framer-motion'
 
 const Experience = () => {
   return (
-    <div className="container min-h-[700px] relative px-6">
+    <div className="container min-h-[700px] relative px-6 mt-12">
       <div className="relative flex justify-center items-center">
         <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-10 -bottom-5"></div>
         <div className="h-8 w-8 bg-teal-500 rounded-md absolute -left-4 bottom-6"></div>
@@ -10,8 +11,8 @@ const Experience = () => {
         <div className="relative mt-16 w-full  py-5">
           {/* Decorative shapes */}
 
-          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-28 top-0"></div>
-          <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-16 top-6"></div>
+          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-28 top-0 "></div>
+          <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-16 md:top-6 rotate-45 top-4"></div>
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-10 top-20"></div>
           {/* bottom */}
 
@@ -32,7 +33,12 @@ const Experience = () => {
                   <img
                     src="/assets/icons/cycle.svg"
                     alt=""
-                    className="w-5 h-5 z-50 absolute    transform -translate-x-1/2 top-[25%] md:top-[60%]"
+                    className="w-5 h-5 z-50 absolute    transform -translate-x-1/2 top-[40%] md:top-[60%]"
+                  />
+                  <img
+                    src="/assets/icons/cycle.svg"
+                    alt=""
+                    className="w-5 h-5 z-50 absolute    transform -translate-x-1/2 top-[75%] md:hidden"
                   />
                   <img
                     src="/assets/icons/cycle.svg"
@@ -61,14 +67,20 @@ const Experience = () => {
 
               {/* Education/Experience Items */}
               {education.map((item, index) => (
-                <div key={index} className="max-w-md px-2  ">
-                  <h1 className="text-3xl font-semibold text-teal-500">
+                <motion.div
+                  initial={{ x: 100, opacity: 0 }}
+                  transition={{ duration: 1 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  key={index}
+                  className="max-w-md px-2  "
+                >
+                  <h1 className="text-2xl font-semibold text-teal-500">
                     {item.title}
                   </h1>
-                  <p className="max-w-md text-lg dark:text-gray-200 ">
+                  <p className="max-w-md text-md dark:text-gray-200 ">
                     {item.content}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

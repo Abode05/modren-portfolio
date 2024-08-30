@@ -7,26 +7,22 @@ const navItem = [
 ]
 const education = [
   {
-    title: 'backend developer',
+    title: 'Backend Development - Laravel',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales ',
+      'Received a training certificate from the Informatics Institute, specializing in backend development using Laravel. This program provided in-depth knowledge of server-side programming and database management.',
   },
   {
-    title: 'Frontend Developer',
+    title: 'Frontend Development - React',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales ',
+      'Completed a training program at Vica Web Solution, focusing on frontend development with React. The course covered advanced concepts in React, including component-based architecture, state management, and responsive design.',
   },
   {
-    title: 'basic react js',
+    title: 'React.js Fundamentals - Coursera',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales ',
+      'Earned a certificate from Coursera for completing a course on the fundamentals of React.js. This course laid the foundation for building dynamic user interfaces and single-page applications.',
   },
-  {
-    title: 'Frontend Developer',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales ',
-  },
-];
+]
+
 // projects data
 const projectData = [
   {
