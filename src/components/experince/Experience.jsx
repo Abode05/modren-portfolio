@@ -68,7 +68,7 @@ const Experience = () => {
               {/* Education/Experience Items */}
               {education.map((item, index) => (
                 <motion.div
-                  initial={{ x: 100, opacity: 0 }}
+                  initial={{ x: 50, opacity: 0 }}
                   transition={{ duration: 1 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   key={index}
