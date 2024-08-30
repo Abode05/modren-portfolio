@@ -8,7 +8,7 @@ import ContactMe from './components/contactMe/ContactMe'
 
 function App() {
   return (
-    <div className="dark:bg-[#222831] dark:text-gray-100 text-gray-800 bg-gray-200  w-full ">
+    <div className="dark:bg-[#222831] dark:text-gray-100 text-gray-800 bg-gray-300  w-full ">
       <NavBar />
        <div className="" id="hero">
         <Hero />

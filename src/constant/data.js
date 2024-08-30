@@ -7,14 +7,14 @@ const navItem = [
 ]
 const education = [
   {
-    title: 'Backend Development - Laravel',
+    title: 'Backend Development-Laravel',
     content:
       'Received a training certificate from the Informatics Institute, specializing in backend development using Laravel. This program provided in-depth knowledge of server-side programming and database management.',
   },
   {
-    title: 'Frontend Development - React',
+    title: 'Frontend Development-React',
     content:
-      'Completed a training program at Vica Web Solution, focusing on frontend development with React. The course covered advanced concepts in React, including component-based architecture, state management, and responsive design.',
+      'Completed a training program at Vica Web Solution, focusing on frontend development with React. The course covered advanced concepts in React and javascript, including component-based architecture, state management, and responsive design.',
   },
   {
     title: 'React.js Fundamentals - Coursera',
