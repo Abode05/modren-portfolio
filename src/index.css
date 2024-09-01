@@ -18,10 +18,7 @@
 }
 
 
-.pop{
-    font-family: "Poppins",sans-serif;
-    
-}
+
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 50px;
@@ -29,6 +26,7 @@
   position: relative;
   background: conic-gradient(from 120deg at 50% 64%,#0000, #25b09b 1deg 120deg,#0000 121deg);
   animation: l27-0 4s infinite cubic-bezier(0.6,1,1,1);
+  
 }
 .loader:before,
 .loader:after {
@@ -52,103 +50,21 @@
    30%,70% {transform: rotate(calc(var(--s,1)*120deg)) translate(calc(var(--s,1)*-5px),10px)}
    100%    {transform: rotate(calc(var(--s,1)*120deg)) translate(0)}
 }
-/* button */
-/* From Uiverse.io by eirikvold */ 
 
-
-/* cv */
-.cv {
-  --green: #1BFD9C;
-  font-size: 15px;
-  padding: 0.7em 2.7em;
-  letter-spacing: 0.06em;
-  position: relative;
-  font-family: inherit;
-  border-radius: 0.6em;
-  overflow: hidden;
-  transition: all 0.3s;
-  line-height: 1.4em;
-  border: 2px solid #00FFFF;
-  /* background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 50%, transparent 0%, transparent 0%, rgba(27, 253, 156, 0.1) 100%); */
-    
-  box-shadow: inset 0 0 10px #359797, 0 0 9px 3px rgba(27, 253, 156, 0.1);
-}
-.background{
-    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 50%, transparent 0%, transparent 0%, rgba(27, 253, 156, 0.1) 100%);
-
-}
-.background2{
-    background: linear-gradient(to right, rgba(1, 122, 70, 0.1) 100%, transparent 0%, transparent 0%, rgba(0, 139, 79, 0.1) 100%);
-
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
-.cv:hover {
-  color: #00FFFF;
-  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(71, 139, 110, 0.2);
-}
 
-.cv:before {
-  content: "";
-  position: absolute;
-  left: -4em;
-  width: 4em;
-  height: 100%;
-  top: 0;
-  transition: transform 0.4s ease-in-out;
-  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
-}
 
-.cv:hover:before {
-  transform: translateX(15em);
-}
 
-.text-stroke-3 {
-    -webkit-text-stroke: 3px rgb(43, 202, 202);
 
-    letter-spacing: 4px;
-    
-}
+
+
 
 /* From Uiverse.io by Kabak */ 
-.bbt{
-  height: 50px;
-  margin: 5px;
-  width: 120px;
-  background: #333;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: Consolas, Courier New, monospace;
-  border: solid #404c5d 1px;
-  font-size: 16px;
-  color: rgb(161, 161, 161);
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #2e2d2d, #212121);
-  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-}
 
-.bbt:hover {
-  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  color: #d6d6d6;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
 
-.bbt:active {
-  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-  color: #d6d6d6;
-  -webkit-transition: 100ms;
-  transition: 100ms;
-}

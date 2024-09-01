@@ -41,7 +41,7 @@ const ContactMe = () => {
   }
 
   return (
-    <div className="container min-h-screen p-2 ">
+    <div className="container min-h-screen p-5 lg:p-4 ">
       <div className="mt-20">
         <div className="">
           <p className="text-lg text-teal-600 font-semibold mb-2">Contact</p>
@@ -49,7 +49,7 @@ const ContactMe = () => {
             <h1 className="text-4xl  font-bold mb-1">
               Let’s Discuss Your <span className="text-teal-500">Project</span>
             </h1>
-            <div className="loader"></div>
+            <div className="loader "></div>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ const ContactMe = () => {
             </div>
             <div className="flex justify-start items-center gap-2   ">
               <div className="bg-teal-400 p-4 rounded-md ">
-                <CiLocationOn className='text-xl' />
+                <CiLocationOn className="text-xl" />
               </div>
               <div className="flex flex-col ">
                 <h1 className="text-md dark:text-gray-200 text-teal-700 text-lg font-semibold ">
@@ -99,29 +99,29 @@ const ContactMe = () => {
                 type="text"
                 name="name"
                 placeholder="Full name"
-                className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
+                className="w-full p-3 border dark:border-gray-300 border-teal-600  rounded bg-transparent focus:outline outline-1 outline-teal-300"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your email"
-                className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
+                className="w-full p-3 border dark:border-gray-300 border-teal-600  rounded bg-transparent focus:outline outline-1 outline-teal-300"
               />
             </div>
             <input
               type="text"
               name="phone"
               placeholder="Phone number"
-              className="w-full p-3 border border-gray-300 rounded bg-transparent focus:outline outline-1 outline-teal-300"
+              className="w-full p-3 border dark:border-gray-300 border-teal-600  rounded bg-transparent focus:outline outline-1 outline-teal-300"
             />
             <textarea
               name="message"
               placeholder="Message"
-              className="w-full p-3 border border-gray-300 rounded h-32 bg-transparent focus:outline outline-1 outline-teal-300"
+              className="w-full p-3 border dark:border-gray-300 border-teal-600  rounded h-32 bg-transparent focus:outline outline-1 outline-teal-300"
             ></textarea>
             <button
               type="submit"
-              className="w-full  md:w-1/4 bg-teal-800 hover:bg-teal-900 duration-200 text-white p-3 rounded"
+              className="w-full  lg:w-1/4 bg-teal-800 hover:bg-teal-900 duration-200 text-white p-3 rounded"
             >
               Send Message
             </button>

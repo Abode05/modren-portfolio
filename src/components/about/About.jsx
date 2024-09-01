@@ -11,9 +11,9 @@ const skills = [
 const About = () => {
   return (
     <div className="min-h-screen relative p-6  text-gray-900  dark:text-gray-200">
-      <div className="flex justify-between mt-8 flex-col md:flex-row gap-10 lg:ga-3">
-        <div className="w-full lg:w-1/2  flex relative justify-center md:justify-start items-start overflow-hidden">
-          <div className="relative md:ml-4 ml-4 h-[400px] w-[450px] flex items-center justify-center md:justify-start transform -rotate-[35deg]">
+      <div className="flex justify-between mt-8 flex-col lg:flex-row gap-10 lg:ga-3">
+        <div className="w-full lg:w-1/2  flex relative justify-center lg:justify-start items-start overflow-hidden">
+          <div className="relative md:ml-4 ml-4 h-[400px] w-[410px] flex items-center justify-center md:justify-start transform -rotate-[35deg]">
             <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-64 w-64 md:h-80 md:w-80 scale-y-125 left-4" />
             <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-64 w-64 md:h-80 md:w-80 scale-y-125 left-10" />
             <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-64 w-64 md:h-80 md:w-80 scale-y-125 left-16" />
@@ -21,18 +21,16 @@ const About = () => {
               src="/assets/icons/html.svg"
               alt="HTML5"
               className="z-20 absolute top-0 md:-top-8 left-[35%]"
-              whileHover={{ rotate: 360, transition: { duration: 2 } }}
             />
             <motion.img
               src="/assets/icons/css.svg"
               alt="GitHub"
               className="h-20 w-20 absolute bottom-0 md:-bottom-4 left-40 "
-              whileHover={{ rotate: 360, transition: { duration: 1 } }}
             />
             <motion.img
               src="/assets/icons/figma.svg"
               alt="Figma"
-              className="h-20 w-20 absolute  md:bottom-40 right-16  md:right-12"
+              className="h-20 w-20 absolute  lg:bottom-40 right-10 md:right-8 sm:right-28  lg:right-5"
             />
             <motion.img
               src="/assets/icons/github.svg"
@@ -51,13 +49,13 @@ const About = () => {
           <h1 className="text-4xl mb-4   font-semibold text-[#288f8b]">
             About Me
           </h1>
-          <p className="mb-6 text-md md:text-lg font-semibold dark:text-gray-200 ">
+          <p className="mb-6 text-md md:text-lg font-semibold poppins-thin dark:text-gray-200 ">
             I am Abdullatif Salaas, a frontend developer specializing in
             React.js. My journey in web development began when I joined the Arab
             International University in Syria in 2021, where I discovered my
             true passion for this field. I am currently working on building my
             personal website to showcase my projects, and I am always looking to
-            develop my skills and advance my career. 
+            develop my skills and advance my career.
           </p>
           {skills.map((skill) => (
             <SkillBar

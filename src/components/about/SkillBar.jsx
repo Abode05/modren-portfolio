@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
-const skillicon = [{ img: '/assets/icons/html.svg' },{
-  img:"/assets/icons/css.svg"
-}]
+
 const SkillBar = ({ name, level,img }) => {
   return (
     <div
@@ -11,7 +9,7 @@ const SkillBar = ({ name, level,img }) => {
       <div className="flex justify-between mb-1">
         <span className="font-bold">{name}</span>
       </div>
-      <div className="w-full h-3 rounded-full bg-gray-300 dark:bg-gray-700">
+      <div className="w-full h-3 rounded-full bg-gray-500 dark:bg-gray-700">
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
