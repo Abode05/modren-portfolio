@@ -16,11 +16,13 @@ const Hero = () => {
         className="absolute inset-0 w-auto h-auto object-cover opacity-100  top-36"
       />
 
-      <div className="py-4 px-8 min-h-screen flex flex-col-reverse md:flex-row md:justify-between">
+      <div
+        className="py-5 px-7 min-h-screen container 
+      flex flex-col-reverse md:flex-row md:justify-between"
+      >
         {/* Text and CTA */}
         <div className="relative  flex flex-col gap-4 items-center md:items-start text-center md:text-start justify-center z-20">
           <div className="absolute opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24 w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0 to-50% pointer-events-none" />
-          {/* <div className="absolute w-full h-full bg-gradient-to-r from-teal-500 to-transparent opacity-20 rounded-full transform -rotate-12 -z-10" /> */}
 
           <motion.h1
             initial={{ opacity: 0 }}
@@ -30,13 +32,12 @@ const Hero = () => {
           >
             <span className="font-medium">HEY!</span>
             <span className="dark:text-[#00fff5] text-[#548f8f]">
-              I'm Abdullatif
+              I'm Abdullatif,
             </span>
-            ,<br /> Frontend Developer
+            <br /> Frontend Developer
           </motion.h1>
           <p className="w-full max-w-lg text-lg md:text-xl text-gray-800 dark:text-[#00adb5] font-medium">
             I'm a freelancer, I transform your ideas into high-quality websites
-            
           </p>
           <a
             href="/AbdullatifCV.pdf"
@@ -63,30 +64,24 @@ const Hero = () => {
             <div className="h-8 w-8 rotate-[30deg] bg-teal-400 absolute left-0 top-11 rounded" />
             <div className="h-4 w-4 rotate-[30deg] bg-teal-600 absolute left-12 top-8 rounded" />
             {/*  */}
-            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute right-4  bottom-32 rounded-full" />
-            <div className="h-2 w-2 rotate-[30deg] bg-teal-200 absolute right-10 md:right-16  bottom-32 rounded-full z-20" />
-            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute left-4  bottom-32 rounded" />
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute right-4  bottom-20 rounded-full" />
+            <div className="h-2 w-2 rotate-[30deg] bg-teal-200 absolute right-10 md:right-10  bottom-32 rounded-full z-20" />
+            <div className="h-4 w-4 rotate-[30deg] bg-teal-500 absolute left-0  bottom-32 rounded" />
 
-            {/* shape 2 */}
-            {/* <div className="absolute md:top-7  md:right-10 z-10 flex  rotate-12  right-6 top-4">
-              <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-6 top-1 z-10 rounded" />
-              <div className="h-6 w-6 rotate-[30deg] bg-slate-400 absolute right-0 md:-right-10 top-0 z-10 rounded" />
-              <div className="h-6 w-6 rotate-[10deg] bg-slate-400 absolute left-4 md:-right-0 top-10 rounded-full" />
-            </div> */}
             <motion.div
               initial={{ opacity: 0 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className=" h-64 w-64 mb-2 md:h-64 mt-10 md:w-64 md:scale-150 bg-[#00adb5] relative md:mt-24  rounded-full flex justify-center items-center  "
+              className=" h-72 w-72 mb-2 md:h-64 mt-10 md:w-64 md:scale-150 bg-[#00adb5] relative md:mt-24  rounded-full flex justify-center items-center  "
             >
               <motion.img
                 initial={{ x: 200, opacity: 0, translateY: 8 }}
                 transition={{ duration: 1.2 }}
                 animate={{ x: 0, opacity: 1, translateY: -6 }}
                 viewport={{ once: true }}
-                src="/assets/phh2.png"
+                src="/assets/ab.png"
                 alt=""
-                className=" transform bg-transparent scale-150  absolute object-cover h-[300px] mx-auto -top-8 rounded-full   "
+                className=" transform bg-transparent scale-125  absolute object-cover h-[350px] md:h-[318px] mx-auto -top-14 rounded-full   "
               />
             </motion.div>
           </div>

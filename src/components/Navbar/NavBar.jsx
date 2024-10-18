@@ -27,8 +27,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className="fixed w-full z-40 px-5 backdrop-blur-md mx-auto transition-colors duration-300">
-      <div className="flex items-center justify-between py-4 w-full gap-4">
+    <div
+      className="fixed w-full z-40  backdrop-blur-md mx-auto transition-colors 
+    duration-300 py-4 px-16"
+    >
+      <div className="flex items-center justify-between  w-full gap-4">
         <a
           href="#"
           className="text-2xl md:text-4xl flex-1  md:flex-none font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-600"
@@ -37,7 +40,7 @@ const NavBar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 -translate-x-7">
+        <div className="hidden md:flex items-center gap-6 -translate-x-7 ">
           <ul className="flex gap-6 items-center">
             {navItem.map((item, index) => (
               <li key={index} className="relative">
@@ -71,7 +74,7 @@ const NavBar = () => {
 
         {/* Mobile Menu Toggle */}
         <div
-          className="block md:hidden cursor-pointer z-50" // Adjust z-index
+          className="block md:hidden cursor-pointer z-50 "
           onClick={() => setToggleMenu(!toggleMenu)}
         >
           {toggleMenu ? (
@@ -84,11 +87,12 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {toggleMenu && (
-        <div className="md:hidden fixed top-0 left-0 h-screen w-full bg-teal-600 z-40 transition-opacity duration-300">
-          <nav
-            aria-label="Global"
-            className="h-full flex flex-col items-center justify-center"
-          >
+        <div
+          className="md:hidden fixed top-0 left-0 h-screen w-full bg-teal-600/90 
+          z-40 transition-opacity  
+        "
+        >
+          <nav className="h-full flex flex-col items-center justify-center">
             <ul className="flex flex-col items-center space-y-6 w-full">
               {navItem.map((item, index) => (
                 <li key={index} className="w-full text-center ">

@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 
 const Experience = () => {
   return (
-    <div className="container min-h-[700px] relative px-6 mt-12">
+    <div className="container min-h-[700px] relative px-6 mt-20">
       <div className="relative flex justify-center items-center">
-        <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-4 sm:left-10 -bottom-5"></div>
-        <div className="h-8 w-8 bg-teal-500 rounded-md absolute left-0 sm:-left-4 bottom-6"></div>
-        <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-6 sm:-left-12 bottom-20"></div>
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-12 sm:left-14 -bottom-4"></div>
+        <div className="h-8 w-8 bg-teal-500 rounded-md absolute left-0 sm:-left-8 bottom-2"></div>
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-1 sm:-left-10 bottom-20"></div>
         <div className="relative mt-16 w-full py-5">
           {/* Decorative shapes */}
-          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-16 sm:right-28 top-0"></div>
+          <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-24 sm:right-28 top-0"></div>
           <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-10 sm:right-16 md:top-6 rotate-45 top-4"></div>
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-6 sm:right-10 top-20"></div>
 
@@ -23,7 +23,7 @@ const Experience = () => {
           </div>
 
           {/* Timeline */}
-          <div className="relative flex justify-center items-center p-4 ">
+          <div className="relative flex justify-center items-center py-5 px-12 ">
             <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl gap-12 mt-4 relative px-4 text-md w-full">
               {/* Left dashed border */}
               <div className="absolute h-full left-[5%] sm:left-[2%] lg:left-0 transform -translate-x-1/2 flex items-center  justify-center">
@@ -47,7 +47,7 @@ const Experience = () => {
               </div>
 
               {/* Right dashed border */}
-              {/* <div className="absolute h-full md:left-[56%] lg:left-[52%] hidden md:flex transform -translate-x-1/2 items-center justify-center">
+              <div className="absolute h-full md:left-[56%] lg:left-[52%] hidden md:flex transform -translate-x-1/2 items-center justify-center">
                 <div className="relative h-full border-l-2 border-dashed border-black dark:border-gray-200 flex flex-col">
                   <img
                     src="/assets/icons/cycle.svg"
@@ -60,7 +60,7 @@ const Experience = () => {
                     className="w-5 h-5 z-50 left-1/2 transform -translate-x-1/2 bottom-[5%] md:bottom-0"
                   />
                 </div>
-              </div> */}
+              </div>
 
               {/* Education/Experience Items */}
               {education.map((item, index) => (
