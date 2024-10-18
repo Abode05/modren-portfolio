@@ -29,7 +29,7 @@ function App() {
         initial={{ opacity: 0, rotate: 0 }}
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1, rotate: 0 }}
-        className="sticky  z-10 h-12 w-12 rotate-2 bg-teal-600/80 left-[92%]
+        className="sticky  z-50 h-12 w-12 rotate-2 bg-teal-600/80 left-[80%]  sm:left-[92%]
               top-[80%]  rounded duration-150  "
       >
         <motion.div
@@ -37,7 +37,7 @@ function App() {
           transition={{ duration: 2 }}
           whileInView={{ opacity: 1, rotate: 45 }}
           className="h-12 w-12 bg-teal-600 absolute flex justify-center
-         items-center  rounded hover:bg-teal-700 duration-150 cursor-pointer "
+         items-center  rounded hover:bg-teal-700 duration-150 cursor-pointer z-50"
         >
           <a href="#">
             <FaArrowUp className="text-2xl -rotate-45" />
