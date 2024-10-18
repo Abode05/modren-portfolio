@@ -29,7 +29,7 @@ const NavBar = () => {
   return (
     <div
       className="fixed w-full z-40  backdrop-blur-md mx-auto transition-colors 
-    duration-300 py-4 px-16"
+    duration-300 md:py-4 md:px-16 py-4 px-7"
     >
       <div className="flex items-center justify-between  w-full gap-4">
         <a

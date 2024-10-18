@@ -79,7 +79,7 @@ const ContactMe = () => {
             </div>
             <div className="flex justify-start items-center gap-2   ">
               <div className="bg-teal-400 p-4 rounded-md ">
-                <CiLocationOn className="text-xl" />
+                <CiLocationOn className="text-xl font-bold " />
               </div>
               <div className="flex flex-col ">
                 <h1 className="text-md  text-teal-600 text-lg font-semibold ">
