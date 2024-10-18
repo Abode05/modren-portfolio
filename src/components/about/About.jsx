@@ -10,19 +10,19 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="min-h-screen relative py-5 px-4 md:px-12  text-gray-900  dark:text-gray-200">
-      <div className="flex justify-between mt-8 flex-col lg:flex-row gap-10 lg:ga-3">
+    <div className=" min-h-screen  relative py-5 px-4 md:px-12  text-gray-900  dark:text-gray-200">
+      <div className="flex  justify-between mt-8 flex-col lg:flex-row gap-10 lg:ga-3">
         <div
           className="w-full lg:w-1/2   flex relative 
          justify-center   lg:justify-center items-center  overflow-hidden"
         >
           <div
-            className="relative md:ml-4 ml-4 lg:h-[470px] h-[350px] md:h-[350px]   lg:w-[450px]  w-[330px] rounded-lg 
+            className="relative md:ml-4 ml-4 lg:h-[470px] h-[350px] md:h-[350px]   lg:w-[450px]  w-[340px] rounded-lg 
           flex items-center justify-center md:justify-center transform -rotate-[35deg]"
           >
-            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-52  sm:h-64 w-52  sm:w-64 lg:h-96 lg:w-96 scale-y-125  left-14" />
-            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-52 sm:h-64  w-52  sm:w-64 lg:h-96 lg:w-96 scale-y-125   " />
-            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-52  sm:h-64 w-52  sm:w-64 lg:h-96 lg:w-96 scale-y-125  right-14" />
+            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  left-14" />
+            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60 sm:h-64  w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125   " />
+            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  right-14" />
             <motion.img
               src="/assets/icons/html.svg"
               alt="HTML5"
@@ -44,12 +44,16 @@ const About = () => {
               className="h-20 w-20 absolute  bottom-40 sm:bottom-40  md:bottom-40 lg:bottom-52 left-0 md:left-0 bg-gray-800 rounded-full 
               object-cover "
             />
-            
+
             <motion.img
               src="/assets/icons/reactt.svg"
               alt="Figma"
               whileHover={{ rotate: 360, transition: { duration: 2 } }}
-              whileDrag={{rotate:360,repeatCount:4, transition:{duration:2}}}
+              whileDrag={{
+                rotate: 360,
+                repeatCount: 4,
+                transition: { duration: 2 },
+              }}
               className="h-24 w-24 absolute  sm:left-32 md:top-[40%] md:left-28 lg:left-48 drop-shadow-[0_5px_40px_#288f8b] "
             />
           </div>
