@@ -10,7 +10,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className=" min-h-screen  relative py-5 px-4 md:px-12  text-gray-900  dark:text-gray-200">
+    <div className=" min-h-screen  relative py-5 px-10 md:px-12  text-gray-900  dark:text-gray-200">
       <div className="flex  justify-between mt-8 flex-col lg:flex-row gap-10 lg:ga-3">
         <div
           className="w-full lg:w-1/2   flex relative 
@@ -20,9 +20,9 @@ const About = () => {
             className="relative md:ml-4 ml-4 lg:h-[470px] h-[350px] md:h-[350px]   lg:w-[450px]  w-[340px] rounded-lg 
           flex items-center justify-center md:justify-center transform -rotate-[35deg]"
           >
-            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  left-14" />
+            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  left-16 md:left-14" />
             <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60 sm:h-64  w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125   " />
-            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  right-14" />
+            <motion.div className="absolute border-2 border-[#00adb5] rounded-full h-60  sm:h-64 w-60  sm:w-64 lg:h-96 lg:w-96 scale-y-125  right-16 md:right-14" />
             <motion.img
               src="/assets/icons/html.svg"
               alt="HTML5"
@@ -58,7 +58,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 p-8 relative h-screen
+        <div className="w-full lg:w-1/2  relative h-screen
          text-gray-900 dark:text-gray-200">
           <h1 className="text-4xl mb-4   font-semibold text-[#288f8b]">
             About Me

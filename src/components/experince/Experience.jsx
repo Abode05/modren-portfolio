@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Experience = () => {
   return (
-    <div className=" min-h-[700px] relative py-5 px-10 md:px-12 mt-16">
+    <div className=" min-h-[700px] relative py-5 px-10 md:px-12 mt-12">
       <div className="relative flex justify-center items-center">
         <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-10 sm:left-14 -bottom-4"></div>
         <div className="h-8 w-8 bg-teal-500 rounded-md absolute -left-5 sm:-left-8 bottom-2"></div>
