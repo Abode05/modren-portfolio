@@ -17,7 +17,14 @@
    
 }
 
-
+@media screen and(max-width:400px) {
+  .about_skill{
+    left: 60px;
+  }
+  .about_skills{
+    right: 60px;
+  }
+}
 
 /* HTML: <div class="loader"></div> */
 .loader {
