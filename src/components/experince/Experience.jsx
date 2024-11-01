@@ -5,13 +5,13 @@ const Experience = () => {
   return (
     <div className=" min-h-[700px] relative py-5 px-10 md:px-12 mt-16">
       <div className="relative flex justify-center items-center">
-        <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-12 sm:left-14 -bottom-4"></div>
-        <div className="h-8 w-8 bg-teal-500 rounded-md absolute left-0 sm:-left-8 bottom-2"></div>
-        <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-1 sm:-left-10 bottom-20"></div>
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-10 sm:left-14 -bottom-4"></div>
+        <div className="h-8 w-8 bg-teal-500 rounded-md absolute -left-5 sm:-left-8 bottom-2"></div>
+        <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-5 sm:-left-10 bottom-20"></div>
         <div className="relative mt-12 w-full py-5">
           {/* Decorative shapes */}
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-24 sm:right-28 top-0"></div>
-          <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-10 sm:right-16 md:top-6 rotate-45 top-4"></div>
+          <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-8 sm:right-16 md:top-6 rotate-45 top-4"></div>
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-6 sm:right-10 top-20"></div>
 
           {/* Header */}
