@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 
 const SkillBar = ({ name, level,img }) => {
   return (
-    <div
-      
+    <div 
       className="mb-4 mt-12 text-gray-900 dark:text-gray-200"
     >
       <div className="flex justify-between mb-1">

@@ -3,28 +3,30 @@ import { motion } from 'framer-motion'
 
 const Experience = () => {
   return (
-    <div className="container min-h-[700px] relative px-2 md:px-6 mt-20">
+    <div className=" min-h-[700px] relative py-5 px-10 md:px-12 mt-16">
       <div className="relative flex justify-center items-center">
         <div className="h-6 w-6 bg-teal-600 rounded-full absolute left-12 sm:left-14 -bottom-4"></div>
         <div className="h-8 w-8 bg-teal-500 rounded-md absolute left-0 sm:-left-8 bottom-2"></div>
         <div className="h-6 w-6 bg-teal-600 rounded-full absolute -left-1 sm:-left-10 bottom-20"></div>
-        <div className="relative mt-16 w-full py-5">
+        <div className="relative mt-12 w-full py-5">
           {/* Decorative shapes */}
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-24 sm:right-28 top-0"></div>
           <div className="h-8 w-8 bg-teal-500 rounded-md absolute right-10 sm:right-16 md:top-6 rotate-45 top-4"></div>
           <div className="h-6 w-6 bg-teal-600 rounded-full absolute right-6 sm:right-10 top-20"></div>
 
           {/* Header */}
-          <div className="text-center mb-6">
-            <p className="text-teal-700">Education and Experience</p>
-            <h2 className="text-3xl font-bold text-center mb-8 text-teal-600">
+          <div className=" md:text-center">
+            <p className="text-lg font-semibold text-teal-700">
+              Education and Experience
+            </p>
+            <h2 className="text-3xl font-bold  mb-8 text-teal-600">
               Education & Experience
             </h2>
           </div>
 
           {/* Timeline */}
-          <div className="relative flex justify-center items-center py-5 px-12 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl gap-12 mt-4 relative px-4 text-md w-full">
+          <div className="relative flex justify-center items-center   ">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl gap-12 mt-4 relative px-4 text-md w-full">
               {/* Left dashed border */}
               <div className="absolute h-full left-[5%] sm:left-[2%] lg:left-0 transform -translate-x-1/2 flex items-center  justify-center">
                 <div className="relative h-full border-l-2 border-dashed border-black dark:border-gray-200 flex flex-col">

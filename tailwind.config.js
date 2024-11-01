@@ -16,9 +16,8 @@ export default {
           'linear-gradient(to right, rgba(27, 253, 156, 0.1) 100%, transparent 0%, transparent 0%, rgba(27, 253, 156, 0.1) 100%)',
       },
       boxShadow: {
-        'custom-inset':
-          'inset 0 0 10px #359797',
-        'custom-outer': '0 0 9px 3px rgba(27, 253, 156, 0.1)',
+        'custom-inset': 'inset 0 0 10px #359797',
+        'custom-outer': '0 0 24px 12px #359799',
       },
       fontFamily: {
         sans: ['var(--font-sora)', ...fontFamily.sans],

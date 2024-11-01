@@ -58,7 +58,8 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 p-8 relative h-screen text-gray-900 dark:text-gray-200">
+        <div className="w-full lg:w-1/2 p-8 relative h-screen
+         text-gray-900 dark:text-gray-200">
           <h1 className="text-4xl mb-4   font-semibold text-[#288f8b]">
             About Me
           </h1>

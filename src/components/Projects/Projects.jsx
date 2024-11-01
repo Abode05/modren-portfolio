@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div className="  min-h-screen py-5 px-7 container ">
+    <div className="  min-h-screen py-5 px-10 md:px-12  ">
       <div className=" mt-24 ">
         <div className="flex justify-between items-center flex-col md:flex-row gap-5">
           <div className="">
@@ -18,7 +18,7 @@ const Projects = () => {
             className="px-4 py-2 bg-teal-700  text-gray-100 rounded-md hover:bg-teal-800 duration-200"
           >
             {' '}
-            veiw github
+            view github
           </a>
         </div>
         <div className="">

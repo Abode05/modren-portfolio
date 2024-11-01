@@ -41,11 +41,14 @@ const ContactMe = () => {
   }
 
   return (
-    <div className=" min-h-screen py-5 px-7 container ">
+    <div className=" min-h-screen py-5 px-10 md:px-12  ">
       <div className="mt-20">
         <div className="">
           <p className="text-lg text-teal-600 font-semibold mb-2">Contact</p>
-          <div className="flex flex-col md:flex-row justify-center md:justify-between items-center  ">
+          <div
+            className="flex flex-col md:flex-row justify-center
+           md:justify-between items-center  "
+          >
             <h1 className="text-4xl  font-bold mb-1">
               Let’s Discuss Your <span className="text-teal-500">Project</span>
             </h1>

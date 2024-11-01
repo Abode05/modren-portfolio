@@ -88,9 +88,9 @@ const NavBar = () => {
       {/* Mobile Menu */}
       {toggleMenu && (
         <div
-          className="md:hidden fixed top-0 left-0 h-screen w-full bg-teal-600/90 
+          className={`md:hidden rounded top-0 left-0 h-screen w-full bg-teal-600/90 
           z-40 transition-opacity  
-        "
+            `}
         >
           <nav className="h-full flex flex-col items-center justify-center">
             <ul className="flex flex-col items-center space-y-6 w-full">

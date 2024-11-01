@@ -1,9 +1,8 @@
-import { CiLocationOn } from "react-icons/ci"
 import { FaArrowRight } from "react-icons/fa"
 
 const Banner = () => {
   return (
-    <div className="container mt-8 p-10 relative max-w-6xl w-full z-20 overflow-hidden">
+    <div className="m-auto mt-8 py-5 px-10 md:px-12 relative max-w-6xl w-full z-20 overflow-hidden">
       <div className="h-96 w-full rounded-xl relative bg-teal-700 flex items-center">
         <div className="absolute h-96 -z-10 w-full rounded-xl bg-teal-500 transform -rotate-2"></div>
 
