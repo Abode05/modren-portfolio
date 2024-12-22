@@ -1,5 +1,6 @@
 import { LuArrowUpRightFromCircle } from 'react-icons/lu'
 import { projectData } from '../../constant/data'
+import { Link } from 'react-router-dom'
 const ProjectCard = () => {
   return (
     <div className="flex justify-center items-center w-full ">
@@ -20,9 +21,9 @@ const ProjectCard = () => {
               <h1 className="text-2xl font-bold  ">{project.name}</h1>
               <div className="flex justify-between p-1 items-center text-xl">
                 <p>{project.language}</p>
-                <a href={project.link} className="text-3xl" target="_blank">
+                <Link to={`/projectShow/${project.id}`}  className="text-3xl" >
                   <LuArrowUpRightFromCircle className="text-teal-600 hover:text-teal-800 duration-200" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

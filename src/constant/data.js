@@ -1,7 +1,7 @@
 const navItem = [
   { name: 'Home', link: '#hero' },
   { name: 'About me', link: '#about' },
-  { name: 'Education', link: '#experince' },
+  { name: 'Education', link: 'experince' },
   { name: 'projects', link: '#projects' },
   { name: 'Contact', link: '#contact' },
 ]
@@ -26,18 +26,21 @@ const education = [
 // projects data
 const projectData = [
   {
+    id:1,
     img: '/assets/project/dashborad1.png',
     name: 'Dashboard',
     language: 'React-js-Tailwind css',
     link: 'https://dashboard-dh5uisd6a-abdullatifs-projects.vercel.app/',
   },
   {
+    id:2,
     img: '/assets/project/edujar.png',
     name: 'edugar',
     language: 'React.js -Css',
     link: 'https://edugar-abdullatifs-projects.vercel.app/',
   },
   {
+    id:3,
     img: '/assets/Marka.png',
     name: 'Marka',
     language: 'React.js-Tailwind css',

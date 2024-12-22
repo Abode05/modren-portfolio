@@ -7,6 +7,8 @@ import Projects from './components/Projects/Projects'
 import ContactMe from './components/contactMe/ContactMe'
 import { FaArrowUp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import { Route, Routes } from 'react-router-dom'
+import ProjectShow from './components/projectSow/ProjectShow'
 
 
 function App() {
@@ -57,6 +59,9 @@ function App() {
       <div className="" id="contact">
         <ContactMe />
       </div>
+      <Routes>
+        <Route path="/projectShow/:id" element={<ProjectShow />} />
+      </Routes>
     </div>
   )
 }

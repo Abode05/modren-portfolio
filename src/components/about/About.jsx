@@ -10,7 +10,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className=" min-h-screen  relative py-5 px-10 md:px-12  text-gray-900  dark:text-gray-200">
+    <div className=" lg:min-h-screen  relative py-5 px-10 md:px-12  text-gray-900  dark:text-gray-200">
       <div className="flex  justify-between mt-8 flex-col lg:flex-row gap-10 lg:ga-3">
         <div
           className="w-full lg:w-1/2   flex relative 

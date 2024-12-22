@@ -41,7 +41,7 @@ const ContactMe = () => {
   }
 
   return (
-    <div className=" min-h-screen py-5 px-10 md:px-12  ">
+    <div className=" py-5 px-10 md:px-12  ">
       <div className="mt-20">
         <div className="">
           <p className="text-lg text-teal-600 font-semibold mb-2">Contact</p>
@@ -139,3 +139,4 @@ const ContactMe = () => {
 }
 
 export default ContactMe
+// ctrl a+ctrl k+ctrl f

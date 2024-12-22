@@ -18,10 +18,10 @@ const Hero = () => {
 
       <div
         className="py-5 px-7 min-h-screen container 
-      flex flex-col-reverse md:flex-row md:justify-between"
+      flex flex-col-reverse items-center justify-center gap-16 lg:flex-row lg:justify-between"
       >
         {/* Text and CTA */}
-        <div className="relative  flex flex-col gap-4 items-center md:items-start text-center md:text-start justify-center z-20">
+        <div className="relative   flex flex-col gap-4 items-center lg:items-start text-center md:text-start justify-center z-20">
           <div className="absolute opacity-10 drop-shadow-[0px_60px_150px_#583FBC] md:top-24 w-full aspect-square bg-radial-gradient from-[#00FFFF] to-[#00FFFF]/0 to-50% pointer-events-none" />
 
           <motion.h1
@@ -40,9 +40,9 @@ const Hero = () => {
             I'm a freelancer, I transform your ideas into high-quality websites
           </p>
           <a
-            href="/AbdullatifCV.pdf"
+            href="/abdullatifNewCv.pdf"
             download
-            className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4 rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
+            className="text-white bg-[#288f8b] hover:bg-[#288f8b] px-8 py-4   rounded-lg duration-150 shadow-lg transition-transform transform hover:scale-105"
           >
             Download CV
           </a>
@@ -53,7 +53,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           transition={{ duration: 3 }}
           whileInView={{ opacity: 1 }}
-          className="relative mt-12 first-line: flex justify-center md:justify-end  "
+          className="relative  mt-12 md:mt-16 lg:mt-0 first-line: flex justify-center md:justify-end  "
         >
           {/* Left-side Image */}
           <div className="relative     mt-4 w-96 flex justify-center items-start ">
@@ -72,7 +72,9 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1 }}
-              className=" h-72 w-72 mb-2 md:h-64 mt-10 md:w-64 md:scale-150 bg-[#00adb5] relative md:mt-24  rounded-full flex justify-center items-center  "
+              className=" h-72 w-72 mb-2 md:h-64 mt-10 md:w-64
+               md:scale-150 bg-[#00adb5] relative md:mt-20
+                 rounded-full flex justify-center items-center  "
             >
               <motion.img
                 initial={{ x: 200, opacity: 0, translateY: 8 }}
@@ -100,4 +102,3 @@ const Hero = () => {
 }
 
 export default Hero
-
