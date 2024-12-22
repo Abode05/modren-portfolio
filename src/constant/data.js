@@ -49,7 +49,7 @@ const projectData = [
   {
     id: 4,
     img: '/assets/appoont.png',
-    name: 'Marka',
+    name: 'appointment deoctor',
     language: 'React.js-Tailwind css',
     link: 'https://appoitment-dusky.vercel.app/',
   },
