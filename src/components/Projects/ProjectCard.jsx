@@ -21,7 +21,7 @@ const ProjectCard = () => {
               <h1 className="text-2xl font-bold  ">{project.name}</h1>
               <div className="flex justify-between p-1 items-center text-xl">
                 <p>{project.language}</p>
-                <Link to={`/projectShow/${project.id}`}  className="text-3xl" >
+                <Link to={project.link}  className="text-3xl" >
                   <LuArrowUpRightFromCircle className="text-teal-600 hover:text-teal-800 duration-200" />
                 </Link>
               </div>
